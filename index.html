@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Mini Blog</h2>
+
+<form method="POST">
+    <input name="title" placeholder="Post title">
+    <button>Add</button>
+</form>
+
+{% for p in posts %}
+    <h3>{{ p }}</h3>
+{% endfor %}
+
+</body>
+</html>
